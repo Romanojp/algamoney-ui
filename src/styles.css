@@ -6,6 +6,8 @@ body {
 
 label {
   font-weight: bold;
+  margin: 0.5em;
+
 }
 
 @media (min-width: 1200px) {
@@ -17,4 +19,21 @@ label {
 
 .label {
   margin: 0.5em;
+}
+
+.col-valor-header {
+  width: 120px;
+  text-align: center !important;
+}
+
+.col-valor-content {
+  text-align: right !important ;
+}
+
+.col-data-header {
+  width: 120px;
+}
+
+.col-data-content {
+  text-align: center !important;
 }
