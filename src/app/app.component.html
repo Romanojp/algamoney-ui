@@ -19,7 +19,7 @@
   <input pInputText type="text" style="width: 95px">
 </div>
 
-<div class="col-12">
+<div class="col-12" >
 <button pButton type="submit" label="Pesquisar"></button>
 </div>
 </div>
@@ -42,12 +42,21 @@
           <td>{{ lancamento.descricao }}</td>
           <td class="col-data-content">{{ lancamento.dataVencimento }}</td>
           <td class="col-data-content">{{ lancamento.dataPagamento }}</td>
-          <td class="col-valor-content">{{ lancamento.valor }}</td>
+          <td class="col-valor-content" [style.color]="lancamento.tipo === 'DESPESA' ? 'red' : 'blue'">{{
+            lancamento.valor }}</td>
+          <td class="col-acoes">
+            <a pButton icon="pi pi-pencil"></a>
+            <button pButton icon="pi pi-trash"></button>
+          </td>
         </tr>
       </ng-template>
 
     </p-table>
 
+  </div>
+
+  <div class="col-12">
+    <a pButton label="Novo lançamento"></a>
 
   </div>
 </div>

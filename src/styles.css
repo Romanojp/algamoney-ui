@@ -37,3 +37,15 @@ label {
 .col-data-content {
   text-align: center !important;
 }
+
+.col-12{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+
+.col-acoes {
+  text-align: center;
+}
+
+
